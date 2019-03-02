@@ -1,5 +1,10 @@
 package jvm.gc;
 
+import common.UserBean;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @Description：算法集
  * @Author： Administrator
@@ -8,6 +13,7 @@ package jvm.gc;
 public class GcArithmetic {
 
     public GcArithmetic instance;
+
     /**
      * 打脸"引用计数算法"
      * 引用计数算法：实例被引用，计数器加一，引用赋值为其他引用该引用减一，为零回收
@@ -24,8 +30,20 @@ public class GcArithmetic {
         System.gc();
     }
 
+    /**
+     * 新建一个对象，放入list里面，将对象的引用置为null
+     */
+    public void classInList(){
+        UserBean userBean = new UserBean("tom",12);
+        List<UserBean> beanList = new ArrayList<>();
+        beanList.add(userBean);
+        userBean = null;
+        beanList = null; //userBean彻底失联
+        System.gc();
+    }
+
     @Override
     public void finalize() throws Throwable {
-        System.out.println("要死了要死了要死了!");
+        System.out.println("GcArithmetic 已失联!");
     }
 }

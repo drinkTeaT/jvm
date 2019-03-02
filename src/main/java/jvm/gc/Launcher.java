@@ -10,6 +10,6 @@ import factory.Factory;
 public class Launcher {
     public static void main(String[] args){
         GcArithmetic gcArithmetic = Factory.createGc();
-        gcArithmetic.countArithmetic();
+        gcArithmetic.classInList();
     }
 }
