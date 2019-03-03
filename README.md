@@ -51,7 +51,7 @@ JVM是java程序员必备的知识，无论是代码优化，扩展自身技术�
         
         指定为20m：-XX:MaxDirectMemorySize = 20M
         
-### <a id = "mem.1">1.2 收集器参数设置</a>
+### <a id = "mem.2">1.2 收集器参数设置</a>
 
 * #### 设置Eden与Survivor之比
         
