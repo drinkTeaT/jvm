@@ -8,6 +8,8 @@ JVM是java程序员必备的知识，无论是代码优化，扩展自身技术�
 * ##### [1.2 收集器参数设置](#mem.2)
 #### 工具使用
 #### 实战
+#### [附录](#others)
+* ##### [知识点回忆](#others.1)
 
 - - -
 
@@ -79,3 +81,7 @@ JVM是java程序员必备的知识，无论是代码优化，扩展自身技术�
 * #### GC动态调节（新生代比例，进入老年代的规则等）
 
         -XX:+UseAdaptiveSizePolicy
+        
+ ### <a id = "others">附录</a>
+* #### <a id = "others.1">知识点回忆</a>
+>[jvm 虚拟机知识](https://www.zybuluo.com/Yano/note/321063#java-%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%9D%A2%E8%AF%95%E9%A2%98%E5%85%A8%E9%9D%A2%E8%A7%A3%E6%9E%90)
